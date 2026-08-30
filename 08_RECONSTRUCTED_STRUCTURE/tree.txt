@@ -1,0 +1,33 @@
+TurtleWoW Launcher (reconstructed)
+├─ src/                              # exact frontend project sources recovered from active source map
+│  ├─ App.tsx
+│  ├─ main.tsx
+│  ├─ assets/
+│  ├─ components/
+│  ├─ layout/
+│  ├─ pages/
+│  ├─ server/                        # browser-side orchestration, not native Rust
+│  │  ├─ modules/{api,addons,patcher,updater,ipc}.ts
+│  │  ├─ stores/{auth,context,fetchCache,mods,preferences,tweaks}.ts
+│  │  ├─ migrations.ts
+│  │  ├─ setup.ts
+│  │  ├─ utils.ts
+│  │  └─ window.ts
+│  └─ utils/
+├─ locales/                          # 6 dictionaries, 261 entries each (extracted from active bundle)
+├─ dist/                             # embedded Tauri web assets recovered from Brotli resource chain
+│  ├─ index.html
+│  └─ assets/
+└─ src-tauri/                        # inferred native project side
+   ├─ src/lib.rs
+   ├─ src/git.rs
+   ├─ src/default_dir.rs
+   ├─ src/spawn_process.rs
+   ├─ src/updater.rs
+   └─ src/updater/{fetcher,mpq,signature_check}.rs
+
+Residual embedded builds:
+- index-lB9Xw9XS.js(+map)
+- index-lbuCOUpK.js(+map)
+- index-Dk2hy703.css
+Active index.html points only to index-D4LZleiB.js + index-Bw3YQ_ue.css.

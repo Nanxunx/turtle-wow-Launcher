@@ -1,0 +1,284 @@
+RUST CRATES 148
+aes 0.8.4
+aho-corasick 1.1.4
+anyhow 1.0.100
+async-compression 0.4.34
+atomic-waker 1.1.2
+base64 0.13.1,0.21.7,0.22.1
+base64ct 1.8.0
+blake2 0.10.6
+blake2b_simd 1.0.3
+brotli-decompressor 5.0.0
+bytes 1.11.0
+cfb 0.7.3
+chacha20 0.9.1
+chrono 0.4.42
+cipher 0.4.4
+compression-codecs 0.4.33
+compression-core 0.4.31
+const-oid 0.9.6
+cookie 0.18.1
+cookie_store 0.21.1
+crossbeam-channel 0.5.15
+crossbeam-deque 0.8.6
+crossbeam-epoch 0.9.18
+curve25519-dalek 4.1.3
+data-encoding 2.9.0
+data-url 0.3.2
+der 0.7.10
+dpi 0.1.2
+encoding_rs 0.8.35
+fern 0.7.1
+futures-channel 0.3.31
+futures-core 0.3.31
+futures-util 0.3.31
+gethostname 1.1.0
+git2 0.20.2
+glob 0.3.3
+globset 0.4.18
+h2 0.4.12
+hashbrown 0.16.1
+http 1.4.0
+http-body-util 0.1.3
+httparse 1.10.1
+hyper 1.8.1
+hyper-rustls 0.27.7
+hyper-util 0.1.19
+icu_collections 2.1.1
+icu_normalizer 2.1.1
+idna 1.1.0
+ignore 0.4.25
+indexmap 2.12.1
+infer 0.19.0
+iota-crypto 0.23.2
+iota_stronghold 2.1.0
+ipnet 2.11.0
+iri-string 0.7.9
+k256 0.13.4
+libgit2-sys 0.18.2+1.9.1
+libssh2-sys 0.3.1
+memchr 2.7.6
+mime 0.3.17
+miniz_oxide 0.8.9
+mio 1.1.0
+muda 0.17.1
+num-bigint-dig 0.8.6
+once_cell 1.21.3
+os_info 3.13.0
+parking_lot_core 0.9.12
+pe-sign 0.1.10
+pem 1.1.1
+pem-rfc7468 1.0.0
+percent-encoding 2.3.2
+phf 0.11.3
+phf_shared 0.11.3
+poly1305 0.8.0
+rand 0.8.5
+rand_chacha 0.3.1,0.9.0
+rand_core 0.6.4
+rayon 1.11.0
+rayon-core 1.13.0
+regex 1.12.2
+regex-automata 0.4.13
+regex-syntax 0.8.8
+reqwest 0.12.24
+rfd 0.15.4
+ring 0.17.14
+rsa 0.9.9
+rust-argon2 2.1.0
+rustls 0.23.35
+rustls-pki-types 1.13.1
+rustls-webpki 0.103.8
+scrypt 0.11.0
+sec1 0.7.3
+semver 1.0.27
+serde 1.0.228
+serde_core 1.0.228
+serde_json 1.0.145
+serialize-to-javascript 0.1.2
+sha2 0.10.9
+shared_child 1.1.1
+slab 0.4.11
+smallvec 1.15.1
+socket2 0.6.1
+softbuffer 0.4.6
+spin 0.9.8
+stronghold-runtime 2.0.1
+stronghold-utils 1.0.0
+stronghold_engine 2.0.1
+subtle 2.6.1
+sysinfo 0.33.1
+tao 0.34.5
+tauri 2.9.4
+tauri-plugin-dialog 2.4.2
+tauri-plugin-fs 2.4.4
+tauri-plugin-http 2.5.4
+tauri-plugin-log 2.7.1
+tauri-plugin-opener 2.5.2
+tauri-plugin-os 2.3.2
+tauri-plugin-shell 2.3.3
+tauri-plugin-single-instance 2.3.6
+tauri-plugin-stronghold 2.3.1
+tauri-plugin-window-state 2.4.1
+tauri-runtime-wry 2.9.2
+tauri-utils 2.8.1
+time 0.3.44
+tiny-keccak 2.0.2
+tinyvec 1.10.0
+tokio 1.48.0
+tokio-rustls 0.26.4
+tokio-util 0.7.17
+tower 0.5.2
+tracing-core 0.1.35
+tray-icon 0.21.2
+unic-char-range 0.9.0
+unicode-normalization 0.1.25
+unicode-segmentation 1.12.0
+untrusted 0.9.0
+url 2.5.7
+urlpattern 0.3.0
+walkdir 2.5.0
+want 0.3.1
+webview2-com 0.38.0
+winapi-util 0.1.11
+windows 0.36.1,0.61.3
+windows-core 0.61.2
+windows-registry 0.6.1
+windows-strings 0.4.2
+wry 0.53.5
+zeroize 1.8.2
+
+GIT CHECKOUTS
+('stormlib-rs-bfe98810852342ac', 'ea22a80')
+
+NODE PACKAGES 130
+@bbob/core
+@bbob/html
+@bbob/parser
+@bbob/plugin-helper
+@bbob/preset
+@bbob/react
+@floating-ui/core
+@floating-ui/dom
+@floating-ui/react-dom
+@floating-ui/utils
+@formatjs/fast-memoize
+@formatjs/icu-messageformat-parser
+@formatjs/icu-skeleton-parser
+@formatjs/intl
+@hookform/resolvers
+@radix-ui/primitive
+@radix-ui/react-arrow
+@radix-ui/react-compose-refs
+@radix-ui/react-context
+@radix-ui/react-dialog
+@radix-ui/react-dismissable-layer
+@radix-ui/react-focus-guards
+@radix-ui/react-focus-scope
+@radix-ui/react-id
+@radix-ui/react-popper
+@radix-ui/react-portal
+@radix-ui/react-presence
+@radix-ui/react-primitive
+@radix-ui/react-slot
+@radix-ui/react-tooltip
+@radix-ui/react-use-callback-ref
+@radix-ui/react-use-controllable-state
+@radix-ui/react-use-escape-keydown
+@radix-ui/react-use-layout-effect
+@radix-ui/react-use-size
+@radix-ui/react-visually-hidden
+@tauri-apps/api
+@tauri-apps/plugin-dialog
+@tauri-apps/plugin-fs
+@tauri-apps/plugin-http
+@tauri-apps/plugin-log
+@tauri-apps/plugin-opener
+@tauri-apps/plugin-os
+@tauri-apps/plugin-process
+@tauri-apps/plugin-shell
+@tauri-apps/plugin-stronghold
+@ungap/structured-clone
+@xstate/store
+aria-hidden
+bail
+classnames
+comma-separated-tokens
+decode-named-character-reference
+entities
+estree-util-is-identifier-name
+extend
+get-nonce
+goober
+hast-util-from-parse5
+hast-util-parse-selector
+hast-util-raw
+hast-util-to-jsx-runtime
+hast-util-to-parse5
+hast-util-whitespace
+hastscript
+hoist-non-react-statics
+html-url-attributes
+html-void-elements
+inline-style-parser
+intl-messageformat
+is-plain-obj
+lucide-react
+mdast-util-from-markdown
+mdast-util-to-hast
+mdast-util-to-string
+micromark
+micromark-core-commonmark
+micromark-factory-destination
+micromark-factory-label
+micromark-factory-space
+micromark-factory-title
+micromark-factory-whitespace
+micromark-util-character
+micromark-util-chunked
+micromark-util-classify-character
+micromark-util-combine-extensions
+micromark-util-decode-numeric-character-reference
+micromark-util-decode-string
+micromark-util-html-tag-name
+micromark-util-normalize-identifier
+micromark-util-resolve-all
+micromark-util-sanitize-uri
+micromark-util-subtokenize
+parse5
+property-information
+react
+react-country-flag
+react-dom
+react-hook-form
+react-hot-toast
+react-intl
+react-is
+react-markdown
+react-remove-scroll
+react-remove-scroll-bar
+react-style-singleton
+rehype-raw
+remark-parse
+remark-rehype
+scheduler
+space-separated-tokens
+style-to-js
+style-to-object
+trim-lines
+trough
+tslib
+unified
+unist-util-is
+unist-util-position
+unist-util-stringify-position
+unist-util-visit
+unist-util-visit-parents
+use-callback-ref
+use-sidecar
+vfile
+vfile-location
+vfile-message
+web-namespaces
+zod
+zwitch

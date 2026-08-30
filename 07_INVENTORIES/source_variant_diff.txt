@@ -1,0 +1,16 @@
+{
+  "variants": ["index-D4LZleiB", "index-lB9Xw9XS", "index-lbuCOUpK"],
+  "counts": {"index-D4LZleiB": 124, "index-lB9Xw9XS": 122, "index-lbuCOUpK": 122},
+  "all_paths": 124,
+  "same": 79,
+  "different": 43,
+  "unique": 2
+}
+
+Active-only paths:
+- components/radio/EventsToday.tsx
+- pages/mods/DevPatchExtract.tsx
+
+Changed paths include App.tsx, changelog, IntlProvider, MirrorSelect, Radio/Calendar, Linux setup, Settings, Addons/Mods UI, DevPatch UI, News, server/createStore.ts, migrations.ts, server/modules/{addons,api,ipc,patcher,updater}.ts, server/stores/{auth,context,fetchCache,mods,preferences}.ts, server/window.ts and utility files.
+
+The two historical builds each contain 122 project files; active contains 124. 79 paths are identical across all three, 43 differ, and 2 are active-only.
