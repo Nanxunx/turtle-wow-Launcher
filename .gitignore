@@ -1,0 +1,9 @@
+*.exe
+*.AppImage
+*.pdb
+*.pem
+*.key
+__pycache__/
+restored/
+ULTIMATE_TEXT_SNAPSHOT.txt
+ULTIMATE_TEXT_SNAPSHOT.txt.xz
