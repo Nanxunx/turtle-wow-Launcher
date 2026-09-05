@@ -1,0 +1,60 @@
+name: Build TalentEditor Chinese UI
+
+on:
+  push:
+    branches:
+      - build/talenteditor-zh-cn-20260905
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout temporary build branch
+        uses: actions/checkout@v4
+
+      - name: Clone upstream TalentEditor
+        run: git clone --recursive --depth 1 https://github.com/Foereaper/TalentEditor.git TalentEditor
+
+      - name: Apply Chinese-English UI patch
+        run: python3 tools/talenteditor_zh/build_patch.py
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.25.x'
+          cache: false
+
+      - name: Install Windows cross compiler
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-mingw-w64-x86-64
+
+      - name: Build Windows x64 GUI executable
+        run: |
+          mkdir -p out
+          CGO_ENABLED=1 GOOS=windows GOARCH=amd64 CC=x86_64-w64-mingw32-gcc \
+            go build -C TalentEditor/src -trimpath -ldflags="-H=windowsgui -s -w" \
+            -o ../../out/TalentEditor-ZH-CN.exe
+
+      - name: Add usage notes
+        run: |
+          cat > out/使用说明.txt <<'EOF'
+          TalentEditor 中文/English 双语版
+
+          1. 双击 TalentEditor-ZH-CN.exe。
+          2. 首次运行会在程序目录生成 config.json，然后程序退出。
+          3. 编辑 config.json，填写 DBC MySQL 数据库连接信息后重新运行。
+          4. 程序顶部菜单“语言 / Language”可选择“简体中文”或“English”。
+          5. 切换语言后程序会自动重新启动并记住选择（language.txt）。
+
+          本版本只增加界面语言层；Talent/Spell/DBC/SQL 保存、删除、数据库字段等核心逻辑保持原项目行为。
+          上游项目：https://github.com/Foereaper/TalentEditor
+          EOF
+
+      - name: Upload Windows package
+        uses: actions/upload-artifact@v4
+        with:
+          name: TalentEditor-ZH-CN-Windows-x64
+          path: out/*
+          if-no-files-found: error
