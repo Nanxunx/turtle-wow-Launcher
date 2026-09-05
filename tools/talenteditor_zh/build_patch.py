@@ -182,7 +182,6 @@ replacements = {
     'widget.NewButton("Delete", func()': 'widget.NewButton(tr("Delete"), func()',
     'tooltip = "Empty talent slot"': 'tooltip = tr("Empty talent slot")',
     'dialog.NewConfirm("Confirm Delete", "Are you sure you want to delete this talent?", func(yes bool)': 'dialog.NewConfirm(tr("Confirm Delete"), tr("Are you sure you want to delete this talent?"), func(yes bool)',
-    'ctx.EditorContainer.Add(widget.NewLabel("Select a talent cell to edit"))': 'ctx.EditorContainer.Add(widget.NewLabel(tr("Select a talent cell to edit")))',
 }
 for old, new in replacements.items():
     if old not in s:
