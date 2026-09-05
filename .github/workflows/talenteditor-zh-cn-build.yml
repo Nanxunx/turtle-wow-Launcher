@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - build/talenteditor-zh-cn-20260905
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
