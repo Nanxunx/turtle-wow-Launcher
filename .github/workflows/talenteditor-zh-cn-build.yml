@@ -28,6 +28,9 @@ jobs:
           go-version: '1.25.x'
           cache: false
 
+      - name: Resolve Go dependencies
+        run: go mod tidy -C TalentEditor/src
+
       - name: Install Windows cross compiler
         run: |
           sudo apt-get update
